@@ -1,0 +1,202 @@
+<!-- to do: change fonts, background color, texts, 
+    add credit to anna in misc, add back icons next to name, add my twitter -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>arfa</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="icons/css/line-awesome.min.css">
+    <!-- computer modern font -->
+    <link rel="stylesheet" href="fonts/Serif/cmun-serif.css">
+    </link>
+    <link rel="stylesheet" href="fonts/Sans/cmun-sans.css">
+    </link>
+    <link rel="stylesheet" href="fonts/Bright/cmun-bright.css">
+    </link>
+    <link rel="stylesheet" href="fonts/Serif-Slanted/cmun-serif-slanted.css">
+    </link>
+    <link rel="stylesheet" href="fonts/Serif-Upright-Italic/cmun-upright-italic.css">
+    </link>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+        integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+        integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
+        crossorigin="anonymous"></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+        crossorigin="anonymous"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+</head>
+
+<body class='noscroll'>
+    <div id="overlay" class="latetransition">
+        <div id="card">
+            <div id="titles">
+                <div id='name'> Arfa Momin </div>
+                <div id='position'> 
+                </div>
+                <div id='affiliation' class='affiliationtext'> compsci & geography <i class="las la-at"></i> uc berkeley </div>
+            </div>
+            <div class='links affiliationtext'>
+                <div class="contact">
+                    <!-- CONTACT -->
+                    <!-- email -->
+                    <a href="mailto:arfamomin@berkeley.edu" disp-title="Email"><i
+                        class="lar la-fw la-envelope "></i></a>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/arfamomin" disp-title="LinkedIn"><i
+                        class="lab la-fw la-linkedin"></i></a>
+                    <!-- github -->
+                    <a href="https://github.com/arfamomin" disp-title="GitHub"><i
+                        class="lab la-fw la-github"></i></a>
+                </div>
+                <button id="leavecard" class="affiliationtext" onclick="toggleout()">
+                    ENTER <i class='las la-fw la-chevron-right'></i>
+                </button>
+            </div>
+        </div>
+        <a id="inspo" href="http://ciralism.tumblr.com" target="_blank">inspiration</a>
+    </div>
+
+    <button id="returntocard" onclick="togglein()"><i class='las la-fw la-chevron-down'></i></button>
+    <div id="content" class="main">
+        <div id="header">
+            <h2> Arfa Momin
+                <!-- <span style="font-size: smaller;"> <i class="las la-leaf"></i></span> -->
+            </h2>
+            <div style="display: inline-block;">
+                <a href="mailto:arfamomin@berkeley.edu"><i class="las la-fw la-envelope "></i></a><a> 
+                <a href="https://www.linkedin.com/in/arfamomin"><i class="las la-fw la-linkedin "></i></a><a> 
+                <a href="https://github.com/arfamomin"><i class="las la-fw la-github "></i></a><a> 
+                </a>
+            </div>
+        </div>
+        <p>I'm an undergraduate student at the University of California, Berkeley, where I study computer science and geography. Currently, 
+            I'm the graphics editor 
+            at <a href="https://dailycal-projects.netlify.app/" target="_blank">The Daily Californian</a>, a software and data intern at 
+            the <a href="https://coolclimate.berkeley.edu/" target="_blank">CoolClimate Network</a> and on course staff for
+             <a href="https://www.data8.org/fa23/" target="_blank">Data 8</a>, Berkeley's largest data science class.
+        </p>
+        <p class="lighter">
+            When I'm not studying or working, you might find me making art, collecting cool vintage maps, drinking (too many) matcha lattes or messing around
+          on Google Earth.
+        </p>
+        
+        <div style="height:10px"></div>
+
+        <div class="collapsible-wrapper">
+            <h3 class="collapsible">Projects</h3>
+            <h3 class="collapsible">Writing</h3>
+            <h3 class="collapsible">Coursework</h3>
+            <!-- <h3 class="collapsible">Miscellaneous</h3> -->
+            <!-- <h3 class="collapsible">Course Notes</h3> -->
+        </div>
+
+        <div class="collapsible-content">
+            <p class="partopmargin">
+            Here are some technical projects I've worked on.
+            <ul class="projectlist">
+                <li>
+                    <a href="https://arfamomin.github.io/energy/">World Energy Mix Visualizer</a>, built in August 2023 with <a href="https://learn.createwithdata.com/">D3 Start to Finish</a>. Use 
+                    this web tool to explore how each country sources energy. Data from World Bank.</a>
+                    <a href="https://github.com/arfamomin/energy"><i class='lab la-fw la-github'></i></a>
+
+
+                </li>
+                <li>
+                    <a href="https://devpost.com/software/secureai-ri32xc?ref_content=user-portfolio&ref_feature=in_progress">SecureAI</a> built in July 2023 at the CalHacks AI with my three teammates. This 
+                    AI-powered application analyzes images to detect signs of human trafficking.</a>
+                    <a href="https://github.com/adriannapinzariu/secureAI"><i class='lab la-fw la-github'></i></a>
+
+                </li>
+                <li>
+                    <a href="https://arfamomin.github.io/energy/">Españdle</a>, a spin-off of NYT’s Wordle, designed for Spanish language learners, built in May 2022.
+                    <a href="https://github.com/arfamomin/energy"><i class='lab la-fw la-github'></i></a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@arfamomin16/developing-and-designing-greengoals-60cd3910211">GreenGoals</a> is an app I built in 2021 designed to motivate users to recycle through personal achievements
+                     and community interaction while also providing resources to quickly discover where they can drop off items.</a>
+                </li>
+            </ul>
+            <p class="partopmargin">
+                Here are some mapping projects I've worked on.
+                <ul class="projectlist">
+                    <li>
+                        <a href="https://storymaps.arcgis.com/stories/601169ef11bd4a519a0ce8bf3998d223">Mapping Optimal Landing Sites and Base Locations on the Moon</a>. A suitbality model of where the next 
+                        Japanese missions should land on the moon — created with Jackie and Alex as the final project in our GIS class.</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/19X1DoitOi_ltSejoWn2JbZAvaMrQeZN-/view?usp=sharing">Food Deserts in Chicago</a>. Map made in ArcGIS.</a>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="collapsible-content">
+            <ul class='projectlist'>
+                <li>
+                    <a href="https://dailycal-projects.netlify.app/2023-06-30-warnme">Sound the alarm: A look inside WarnMe notifications | The Daily Californian</a>. Checkout the dataset 
+                    we created for this piece <a href="https://docs.google.com/spreadsheets/d/1g_-TaEcRInleJPUAXpVqL1JaSEgN3IrYiCBP45ygbJ8/edit?usp=sharing">here</a>.</a> 
+                    <a href="https://github.com/arfamomin/dailycal-visuals/tree/main/warnme-visuals"><i class='lab la-fw la-github'></i></a>
+                </li>
+                <li>
+                    <a href="https://dailycal-projects.netlify.app/2023-03-10-telegraph-pedestrianized">Students revive decades-old fight for a car-free Telegraph | The Daily Californian</a>. 
+                    Reimagine what Telegraph Ave. could look like.</a> 
+                </li>
+                <li>
+                    <a href="https://dailycal-projects.netlify.app/2022-11-22-bargaining">What are UC workers bargaining for? | The Daily Californian</a>. This accordion style, interactive infographic
+                     with short summaries built using JavaScript, CSS, and HTML provided real-time, daily updates for readers during ongoing contract negotations.</a> 
+
+                </li>
+                <li>
+                    <a href="https://docs.google.com/document/d/1XMD_7_i0ti8Pd1nrfYvEhv-BLj9kUg5dDKxU_ja5u-w/edit?usp=sharing">The Women's Pandemic is Bold and Bald | The New York Times</a>. A story about shaving your head. Finalist in the New York Times Editorial Contest.</a> 
+                </li>
+            </ul>
+            <p style="margin-top: 0;">
+                See <a href="https://www.dailycal.org/users/profile/arfa%20momin/">here</a> for more writing samples.
+                
+            </p>
+        </div>
+
+        <div class="collapsible-content">
+          <p class="partopmargin">
+            Courses I've taken up to Fall 2023. All at UC Berkeley.
+          </p>
+          <ul class='projectlist'>
+            <li>CS 61B: Data Structures  </li>
+            <li>CS 70: Discrete Math and Probability Theory </li>
+            <li>GEOG C188: Geographic Information Sciences</li> 
+            <li>GEOG 10AC: Worldings: Regions, Peoples, and States </li> 
+            <li>MATH 54: Linear Algebra and Differential Equations</li>
+            <li>EPS 88: Python Applications in Earth Science</li>
+            <li>LS 22: Sense, Sensibility, and Science</li>
+            <li>CS 61A: The Structure and Interpretation of Computer Programs </li>
+            <li>PHYSICS 8A: Introductory Physics</li>
+            <li>DATA 8: Foundations of Data Science</li>
+            <li>MATH 1B: Calculus II</li>
+            <li>ESPM 6: Environmental Biology</li>
+            <li>R1B: Feminist Literature</li>
+        </div>
+        </div>
+    </div>
+    <div id="footer" class="main">
+        &copy; december 2023
+    </div>
+</body>
+
+</html>
