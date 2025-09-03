@@ -202,6 +202,15 @@
     <div id="footer" class="main">
         &copy; december 2023
     </div>
+
+    <script>
+  document.querySelectorAll('.collapsible-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      content.classList.toggle('open');
+    });
+  });
+</script>
 </body>
 
 </html>
