@@ -28,35 +28,72 @@
   <div class="column">
     <div class="header">
         <h1><span style="font-weight: 500;">Project 0: Becoming friends with my camera</span></h1>
-        <p><em>The goal of this project is to get some intuitive understanding of the somewhat subtle relationship between perspective, focal length/zoom, and the center of projection. </em></p>
-    </div>
-
-     <div class="section">
-        <h2><span style="font-weight: 600;">Part 1: Taking a selfie the right vs. wrong way</span></h2>
-        <div class="side-by-side">
-            <img src="sophia-close.png" alt = 'sophia close' width="275px"></img>
-            <img src="sophia-far.png" alt = 'sophia close' width="275px"></img>
-        </div>
-        <p><em> This is my housemate Sophia!</em></p>
-    </div>
-
-     <div class="section">
-        <h2><span style="font-weight: 600;">Part 2: Architectural perspective compression</span></h2>
-        <div class="side-by-side">
-            <img src="simonfar.png" alt = 'sophia close' width="275px"></img>
-            <img src="simonclose.png" alt = 'sophia close' width="275px"></img>
-        </div>
-        <p><em> &#x1F4CD On Optometry Lane. </em></p>
+        <p><em>The goal of this project is to get some intuitive understanding of the somewhat subtle relationship between perspective, focal length/zoom, and the center of projection.</em></p>
     </div>
 
     <div class="section">
-        <h2><span style="font-weight: 600;">Part 3: Dolly Zoom</span></h2>
-        <div class="container">
-            <img src="cs180tv.gif" alt = 'sophia close' width="500px"></img>
+        <button class="collapsible">
+          Part 1: Taking a selfie the right vs. wrong way
+          <span class="plus-sign">+</span>
+        </button>
+        <div class="content">
+            <div class="side-by-side">
+                <img src="sophia-close.png" alt='sophia close' width="275px">
+                <img src="sophia-far.png" alt='sophia far' width="275px">
+            </div>
+            <p><em>This is my housemate Sophia!</em></p>
         </div>
     </div>
-    
+
+    <div class="section">
+        <button class="collapsible">
+          Part 2: Architectural perspective compression
+          <span class="plus-sign">+</span>
+        </button>
+        <div class="content">
+            <div class="side-by-side">
+                <img src="simonfar.png" alt='simon far' width="275px">
+                <img src="simonclose.png" alt='simon close' width="275px">
+            </div>
+            <p><em>📍 On Optometry Lane.</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <button class="collapsible">
+          Part 3: Dolly Zoom
+          <span class="plus-sign">+</span>
+        </button>
+        <div class="content">
+            <div class="container">
+                <img src="cs180tv.gif" alt='dolly zoom' width="500px">
+            </div>
+        </div>
+    </div>
 
   </div>
+
+  <script>
+    // Get all collapsible buttons
+    var coll = document.getElementsByClassName("collapsible");
+
+    // Add click event listener to each button
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        // Toggle active class
+        this.classList.toggle("active");
+        
+        // Get the content div that follows this button
+        var content = this.nextElementSibling;
+        
+        // Toggle the display of content
+        if (content.classList.contains("show")) {
+          content.classList.remove("show");
+        } else {
+          content.classList.add("show");
+        }
+      });
+    }
+  </script>
 </body>
 </html>

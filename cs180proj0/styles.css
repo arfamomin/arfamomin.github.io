@@ -1,16 +1,13 @@
-/* Reset default margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Apply font to headings and paragraphs */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Saira", "Computer Modern Bright", serif;
   /* font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; */
   
-
 }
 
 h1 {
@@ -47,7 +44,7 @@ body {
 }
 
 .section {
-  padding-top: 2rem;
+  padding-top: 0rem;
   max-width: 800px;
   /* text-align: left; */
 }
@@ -70,12 +67,11 @@ body {
   width: 100%;
 }
 
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -83,15 +79,55 @@ body {
   font-size: 15px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
   background-color: #ccc;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+.collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Saira", "Computer Modern Bright", serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .collapsible .plus-sign {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .collapsible.active .plus-sign {
+      transform: rotate(45deg);
+    }
+
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+
+    .content {
+      /* padding: 0 18px; */
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+
+    .content.show {
+      display: block;
+      padding: 18px;
+    }
